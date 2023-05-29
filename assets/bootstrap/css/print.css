@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hide element at printing</title>
+		<style>
+			body {
+				text-align:center;
+			}
+			h1 {
+				color:green;
+			}
+			@media print {
+			img {
+				visibility: hidden;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GeeksforGeeks</h1>
+		
+<p>A computer science portal for geeks</p>
+
+		<img src="gfg.png" alt="image">
+		<style>
+			.noprint {
+				visibility: hidden;
+			}
+			</style>
+	</body>
+</html>				
