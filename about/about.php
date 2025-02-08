@@ -1,7 +1,7 @@
 <html>
 <?php
 session_start();
-require 'C:\xamppp\htdocs\tankwa\connection.php';
+require 'C:\xampp\htdocs\tankwa\connection.php';
 $conn = Connect();
 ?>
 <html lang="en" class="no-js">

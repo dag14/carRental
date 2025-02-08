@@ -83,13 +83,13 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
               <div class="p">
               <br><br><br><img src="assets/img/b.jpg" style="width:249.718px;height:206.388px;"></div>
 </div>
-<?php $sql4 = "SELECT ido FROM users   ";
+<?php $sql4 = "SELECT id FROM users   ";
    $result4 = $conn->query($sql4);
    if (mysqli_num_rows($result4) > 0) {
     while($row = mysqli_fetch_assoc($result4)) {
         
         
-        $ido = $row["ido"];
+        $id = $row["id"];
         
     }
 }
@@ -106,7 +106,7 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
                   </div>
                   <form class="user" role="form" action="processlogin.php" method="post">
                   <div class="form-group">
-                  <input  type="hidden"class="form-control"  name="ido" value="<?php $ido; ?>" ><br>
+                  <input  type="hidden"class="form-control"  name="id" value="<?php $id; ?>" ><br>
                     </div>  
                   
                   <div class="form-group">

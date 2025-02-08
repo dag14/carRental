@@ -5,7 +5,7 @@ $conn = Connect();
 require('session.php');
 if (isset($_POST['btnlogin'])) {
 
-  $ido = trim($_POST['ido']);
+  $id = trim($_POST['id']);
   $users = trim($_POST['user']);
   $upass = trim($_POST['password']);
   $h_upass = sha1($upass);
@@ -21,8 +21,8 @@ if ($upass == ''){
 else {
 //create some sql statement      
      
-        $sql = "SELECT e.FIRST_NAME,e.LAST_NAME,c.full_name,c.customer_id,e.EMPLOYEE_ID,u.ido,u.USERNAME,u.PASSWORD,u.ID,u.TYPE_ID,t.TYPE,t.TYPE_ID
-        FROM  users u, customer c,employee e, type t
+        $sql = "SELECT e.FIRST_NAME,e.LAST_NAME,c.CUSTOMER_NAME,c.customer_id,e.EMPLOYEE_ID,u.id,u.USERNAME,u.PASSWORD,u.ID,u.TYPE_ID,t.TYPE,t.TYPE_ID
+        FROM  users u, customers c,employee e, type t
         
     
         WHERE  u.USERNAME ='" . $users . "'  AND u.PASSWORD =  '" . $h_upass . "' AND u.TYPE_ID=t.TYPE_ID AND (e.EMPLOYEE_ID=u.ID OR c.customer_id=u.ID) ";
@@ -46,7 +46,7 @@ else {
 
                 
                  
-                $_SESSION['CUSTOMER_NAME']  =  $found_user['full_name'];
+                $_SESSION['CUSTOMER_NAME']  =  $found_user['CUSTOMER_NAME'];
                 
                 
                 
@@ -103,5 +103,5 @@ else {
         
     }       
 } 
- $db->close();
+ $conn->close();
 ?>

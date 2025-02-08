@@ -206,7 +206,7 @@ $USERNAME = $_SESSION['FIRST_NAME'];
 $car_id = $rs['car_id'];
  
 
-$query2 = "INSERT into clientcars(car_id,USERNAME) values('" . $car_id ."','" . $USERNAME ."','" . $_SESSION['FIRST_NAME'] . "')";
+$query2 = "INSERT into clientcars(car_id,USERNAME) values('" . $car_id ."','" . $USERNAME ."')";
 $success2 = $conn->query($query2);
 
 if (!$success){ ?>

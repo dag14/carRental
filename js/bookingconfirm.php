@@ -104,7 +104,7 @@ $conn = Connect();
                     <i class="fa fa-bars"></i>
                     </button>
                 <a class="navbar-brand page-scroll" href="index3.php">
-                   PATNA CAR RENTAL </a>
+                   Tankua Car Rentals </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -150,7 +150,7 @@ $conn = Connect();
     </div>
     <br>
 
-    <h2 class="text-center"> Thank you for visiting Patna Car Rental! We wish you have a safe ride. </h2>
+    <h2 class="text-center"> Thank you for visiting Tankua Car Rentals! We wish you have a safe ride. </h2>
 
  
 
@@ -219,7 +219,7 @@ $conn = Connect();
                     <i class="fa fa-bars"></i>
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
-                   PATNA CAR RENTAL </a>
+                   Tankua Car Rentals </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
 
