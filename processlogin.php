@@ -64,7 +64,7 @@ else {
                   </script>
              <?php        
            
-        }elseif ($_SESSION['TYPE']=='Employee' ){
+        }elseif ($_SESSION['TYPE']=='User' ){
            
              ?>    <script type="text/javascript">
                       //then it will be redirected to index.php

@@ -93,10 +93,10 @@ $PASSWORD = $conn->real_escape_string($_POST['PASSWORD']);
 $CONFIRM_PASSWORD = $conn->real_escape_string($_POST['CONFIRM_PASSWORD']);
 
 if ($PASSWORD==$CONFIRM_PASSWORD){
-$query = "INSERT into customer(full_name,email,phone,city,sub_city,kebele) VALUES('" . $CUSTOMER_NAME . "','" . $CUSTOMER_EMAIL . "','" . $CUSTOMER_PHONE . "','" . $city ."','" . $sub_city ."','" . $kebele ."')";
+$query = "INSERT into employee(customer_name,username, email,phone,city,sub_city,kebele) VALUES('" . $CUSTOMER_NAME . "','" . $CUSTOMER_EMAIL . "','" . $CUSTOMER_PHONE . "','" . $city ."','" . $sub_city ."','" . $kebele ."')";
 $success = $conn->query($query);
 
-$query = "SELECT customer_id FROM  customer where `full_name`='" . $CUSTOMER_NAME . "' ";
+$query = "SELECT customer_id FROM  customer where `customer_name`='" . $CUSTOMER_NAME . "' ";
 $success2 = $conn->query($query);
 if ( $success2->num_rows > 0  ) {
     $found_user  = mysqli_fetch_array($success2);

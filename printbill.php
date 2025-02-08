@@ -127,7 +127,7 @@ else {
     </div>
     <br>
 
-    <h2 class="text-center"> Thank you for visiting Patna Car Rental! </h2>
+    <h2 class="text-center"> Thank you for visiting Tankua Car Rentals! </h2>
 
     <h3 class="text-center"> <strong>Your Order Number:</strong> <span style="color: blue;"><?php echo "$id"; ?></span> </h3>
 
